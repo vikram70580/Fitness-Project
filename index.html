@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Video container */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            /* Centers the content horizontally */
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            /* Ensures navbar takes up full width */
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            font-family: sans-serif;
+        }
+
+        .navbar1 {
+            padding: 10px 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .footer-links a:hover {
+            color: #f4b400;
+        }
+
+        .footer-info {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video src="Fitness Cinematic Video   Sony A7siii   Gym Video.mp4" autoplay loop muted class="video"></video>
+
+        <!-- Navbar stays on top -->
+        <nav class="navbar">
+            <div class="navbar1"><a href="#workout">WORKOUT</a></div>
+            <div class="navbar1"><a href="#diet">DIET</a></div>
+            <div class="navbar1"><a href="#achivements">ACHIEVEMENTS</a></div>
+            <div class="navbar1"><a href="#testimonials">TESTIMONIALS</a></div>
+            <div class="navbar1"><a href="#contact">CONTACT</a></div>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+        <div class="footer-info">
+            <p>Contact us at: trainer@example.com | Phone: +123 456 7890</p>
+            <p>&copy; 2025 Fitness Trainer | All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
